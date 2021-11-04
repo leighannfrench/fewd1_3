@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* restore style for list and text formatting(<strong>,<em> ect  */
+
+
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1rem;
+}
+
+  ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 1rem;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-latin;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+font-style: italic;
+}
+
+
+  /* custom style  */
+
+	html{
+		font-size: 100%;
+	}
+
+	body{
+		font-size: 100%;
+	}
+
+.anim{
+	border: solid 2px black;
+	width: 500px;
+	height: 300px;
+	margin: 1rem;
+	overflow: hidden;
+}
+.anim__roomba{
+	width: 100px;
+	position: relative;
+	animation: roombia-anim 10s linear forwards;
+	top: 0px;
+	left: 0px;
+}
+
+
+@keyframes roombia-anim{
+	0%{
+		top: 50px;
+		left: -200px;
+		transform: rotate(-90deg);
+	}
+	100%{
+		top: 50px;
+		left: 600px;
+		transform: rotate(-90deg);
+	}
+	
+}
+.anim__headline{
+	opacity: 1;
+	position: relative;
+	top: 90px;
+	left: 20px;
+	font-size: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	animation: anim-headline 10s linear  forwards;
+} 
+@keyframes anim-headline{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}	
+
+.logo{
+ 	opacity: 0;
+	animation: logo 1s linear 10s forwards;
+	position: relative;
+	left: 50px;
+	top: -50px;
+}
+@keyframes logo{
+	form{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
